@@ -1,0 +1,52 @@
+@-moz-keyframes foo {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+		
+	to {
+		-moz-transform: rotate(360deg);
+	}	
+}
+
+@-webkit-keyframes foo {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+		
+	to {
+		-webkit-transform: rotate(360deg);
+	}	
+}
+
+#apa {
+	height:500px;
+	margin:100px 0 0 100px;
+	position:relative;
+	width:500px;
+}
+
+#wheel {
+	background:url(wheel.png);
+	height:206px;
+	position:absolute;
+	width:207px;
+	z-index:20;
+
+	-moz-animation-name: foo;
+	-moz-animation-duration: 12s;  
+   	-moz-animation-iteration-count: infinite; 
+	-moz-animation-timing-function: linear;
+
+	-webkit-animation-name: foo;
+	-webkit-animation-duration: 12s;  
+   	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-timing-function: linear;
+}
+
+#legs {
+	height:206px;
+	position:absolute;
+	top:90px;
+	width:207px;
+	z-index:10;
+}
